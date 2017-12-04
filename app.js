@@ -28,25 +28,30 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  if(command === "낮") {
-
-    message.delete().catch(O_o=>{});
-  
-    message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
-  }
-    if(command === "") {
-
-    message.delete().catch(O_o=>{});
-  
-    message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif");
-    
-    }
+ 
   
   if(command === "핑") {
    
     const m = await message.channel.send("핑이요?");
     m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다.^^ API 대기 시간은 ${Math.round(client.ping)}ms 입니다^^`);
   }
+  
+  if(command === "낮") {
+
+    message.delete().catch(O_o=>{});
+  
+    message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
+  }
+  
+  
+  if(command === "") {
+
+    message.delete().catch(O_o=>{});
+  
+    message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif");
+    
+   }
+  
   
   if(command === "말") {
 
