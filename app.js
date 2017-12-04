@@ -28,6 +28,13 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
+  if(command === "초대")
+    voiceChannel.join()
+    .then(connection => {
+  
+    })
+  
+  
   if(command === "핑") {
    
     const m = await message.channel.send("핑이요?");
