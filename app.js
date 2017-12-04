@@ -56,7 +56,7 @@ client.on("message", async message => {
       description: "이 봇은 현제 나이트 BOT에 의해 실행되고있습니다",
       fields: [{
           name: "서버 관리봇",
-          value: "현제 이 봇은 24시간이 되기위해 노력중입니다."
+          value: "현제 이 봇은 24시간 호스팅을 받는중입니다. (속도확인은 ~핑으로)"
         },
         {
           name: "백호 유튜브",
@@ -127,7 +127,7 @@ client.on("message", async message => {
     
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
-      return message.reply("2에서 100중 숫자를 같이 써주세요! (예 +purge 99)");
+      return message.reply("2에서 100중 숫자를 같이 써주세요! (예 ~청소)()( 99)");
     
     
     const fetched = await message.channel.fetchMessages({count: deleteCount});
