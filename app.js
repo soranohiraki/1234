@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const yt = require('ytdl-core');
-const client = new Discord.Client();
+const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed();
-new Discord.WebhookClient(id, token, options);
+new Discord.WebhookClient(idtokenoptions);
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -47,6 +47,7 @@ client.on("message", async message => {
   if(command === "밤") {
 
     message.delete().catch(O_o=>{});
+  
     message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif");
   
    }
