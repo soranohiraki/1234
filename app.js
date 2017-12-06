@@ -26,7 +26,11 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
- 
+  
+ if(command === "퐁") {
+   
+   message.channel.send("핑!"); 
+  }
   
   if(command === "핑") {
    
