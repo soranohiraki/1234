@@ -21,7 +21,7 @@ client.on("guildDelete", guild => {
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
-  if (!message.guild) return;
+  if(!message.guild) return;
 
 client.on("message", async message => {
   if(message.author.bot) return;
