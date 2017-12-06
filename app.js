@@ -46,7 +46,6 @@ client.on("message", async message => {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
-}
   
   if(command === "밤") {
 
