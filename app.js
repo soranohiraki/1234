@@ -42,6 +42,12 @@ client.on("message", async message => {
   }
   
   
+  if(command === "아바타") {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
+  }
+}
+  
   if(command === "밤") {
 
     message.delete().catch(O_o=>{});
