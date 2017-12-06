@@ -40,7 +40,7 @@ client.on("message", async message => {
   
   if(command === "참가") {
     // Only try to join the sender's voice channel if they are in one themselves
-    if (message.member.voiceChannel) {
+    if(message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply("채널입장 성공!")
