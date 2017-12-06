@@ -38,6 +38,20 @@ client.on("message", async message => {
     m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다. API 대기 시간은 ${Math.round(client.ping)}ms 입니다. ^^7`);
   }
   
+  if (message.content === "참가") {
+    // Only try to join the sender's voice channel if they are in one themselves
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => { // Connection is an instance of VoiceConnection
+          message.reply("채널입장 성공!")
+        })
+        .catch(console.log);
+    } else {
+      message.reply("먼저 채널에 입장해주세요.")
+    }
+  }
+
+  
   if(command === "낮") {
 
     message.delete().catch(O_o=>{});
