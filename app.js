@@ -18,7 +18,7 @@ client.on("guildDelete", guild => {
   client.user.setGame(`호랑이굴입니다!`);
 });
 
-client.on('message', message => {
+client.on("message", message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
   if(!message.guild) return;
