@@ -31,7 +31,7 @@ client.on("message", async message => {
   if(command === "핑") {
    
     const m = await message.channel.send("핑이요?");
-    m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다. API 대기 시간은 ${Math.round(client.ping)}ms 입니다. ^^7^^`);
+    m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다. API 대기 시간은 ${Math.round(client.ping)}ms 입니다. ^^7`);
   }
   
   if(command === "낮") {
