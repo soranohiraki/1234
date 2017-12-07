@@ -31,11 +31,7 @@ client.on("message", async message => {
    
    message.channel.send("핑!"); 
   }
-  
-  if(command === "태우") {
-    
-    message.channel.send("하영");
-  }
+ 
   
   
   if(command === "핑") {
