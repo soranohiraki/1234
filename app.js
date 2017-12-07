@@ -52,8 +52,9 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-  message.channel.send("업데이트중입니다. 추가기능이 필요하시다면 1대1 연락주세요")
-    }
+  message.channel.send
+   message.reply(message.author.avatarURL);
+})
    
   if(command === "밤") {
 
