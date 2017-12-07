@@ -3,7 +3,6 @@ const yt = require('ytdl-core');
 const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed()
-const ce = require("embed-creator");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -56,17 +55,8 @@ client.on("message", async message => {
 
     message.delete().catch(O_o=>{});
   
-   msg.channel.send(ce(
-  "#FEAFEA", {"name": "호랑이굴", "icon_url": msg.author.displayAvatarURL(), "url": "https://www.google.com"}, "Title", "Description",
-  [
-  {"name": "사진", "value": "당신의 프로필은!"}],
-  {"text": "뀨!", "icon_url": msg.guild.iconURL()}, 
-  {"thumbnail": msg.guild.iconURL(), "image": msg.author.displayAvatarURL()}, false
-));
-     {"thumbnail": msg.guild.iconURL(), "image": ("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
-  }, false
-    ))
-    }
+message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
+
 
   
   
@@ -79,7 +69,7 @@ client.on("message", async message => {
 
     message.delete().catch(O_o=>{});
   
-    message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif");
+  message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif");
   
    }
   
