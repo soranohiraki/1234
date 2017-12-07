@@ -51,7 +51,12 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-    message.reply(message.author.avatarURL);
+    message.channel.send({embed: {
+      color: 3447003,
+      author: {
+        name: message.author.username,
+        icon_url: message.author.avatarURL
+      },
   }
   
   if(command === "밤") {
