@@ -52,23 +52,8 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-      .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription("당신의 아바타")
-  .setFooter("made by NIGHT BOT", "http://i.imgur.com/w1vhFSR.png")
-  .setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail("http://i.imgur.com/p2qNFag.png")
-  .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
-
-  message.channel.send({embed});
-  
+  message.channel.send("업데이트중입니다. 추가기능이 필요하시다면 1대1 연락주세요")
+   
   if(command === "밤") {
 
     message.delete().catch(O_o=>{});
