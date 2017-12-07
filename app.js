@@ -3,6 +3,7 @@ const yt = require('ytdl-core');
 const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed()
+const ce = require("embed-creator");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
