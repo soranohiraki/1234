@@ -20,6 +20,7 @@ client.on("guildDelete", guild => {
 });
 
 
+
 client.on("message", async message => {
   if(message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -32,7 +33,14 @@ client.on("message", async message => {
    
    message.channel.send("핑!"); 
   }
- 
+  
+ if(command === "테스트") {
+    request.get(message.content.substr(11)).pipe(fs.createWriteStream('./setavatar.png'));
+    client.user.setAvatar(fs.readFileSync('./setavatar.png')).then(user => { message.channel.send('✔ Operation successful'); console.log('New Avatar set!'); })
+        .catch((error) => { message.channel.send('× Operation failed'); console.log('Error on setavatar command:', error); });
+    
+    return;
+}
   
   
   if(command === "핑") {
