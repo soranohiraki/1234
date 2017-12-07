@@ -56,7 +56,13 @@ client.on("message", async message => {
     message.delete().catch(O_o=>{});
   
    msg.channel.send(ce(
-  "#FEAFEA", {"thumbnail": msg.guild.iconURL(), "image": ("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
+  "#FEAFEA", {"name": "호랑이굴", "icon_url": msg.author.displayAvatarURL(), "url": "https://www.google.com"}, "Title", "Description",
+  [
+  {"name": "사진", "value": "당신의 프로필은!"}],
+  {"text": "뀨!", "icon_url": msg.guild.iconURL()}, 
+  {"thumbnail": msg.guild.iconURL(), "image": msg.author.displayAvatarURL()}, false
+));
+     {"thumbnail": msg.guild.iconURL(), "image": ("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif");
   }, false
     ))
 
