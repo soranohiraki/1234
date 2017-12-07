@@ -54,7 +54,7 @@ client.on("message", async message => {
   if(command === "아바타") {
   message.channel.send
    message.reply(message.author.avatarURL);
-})
+}
    
   if(command === "밤") {
 
