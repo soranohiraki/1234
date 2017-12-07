@@ -49,7 +49,6 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-    // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
   
