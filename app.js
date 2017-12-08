@@ -77,6 +77,7 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
 
     message.delete().catch(O_o=>{});
 message.channel.send("백호님의 방송이 시작되었습니다. 공지방에 유튜브링크가있으니 확인해주시길바랍니다.(찡긋)", { tts: true });
+    message.delete().catch(O_o=>{});
     message.channel.send("https://www.youtube.com/user/yhjh1260")
   }
   
