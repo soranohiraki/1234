@@ -72,15 +72,7 @@ client.on("message", async message => {
   
   if(command === "아바타") {
   message.channel.send
-    message.channel.sendMessage({
-        "embed": {
-                title: '낮',
-                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif',
-                "image": {
-                "url": "(message.author.avatarURL)",
-                }
-            }
-        });
+message.reply(message.author.avatarURL);
 }
    
   if(command === "좋은밤이에요!!^^") {
