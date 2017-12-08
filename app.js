@@ -49,12 +49,6 @@ client.on("message", async message => {
     m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다. API 대기 시간은 ${Math.round(client.ping)}ms 입니다. ^^7`);
   }
   
-
-  if(command === "태우") {
-  message.delete().catch(O_o=>{});
-    message.channel.send("하영")
-    message.delete().catch(O_o=>{});
-  }
   
   
   if(command === "낮") {
