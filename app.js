@@ -50,6 +50,12 @@ client.on("message", async message => {
   }
   
 
+  if(command === "태우") {
+  message.delete().catch(O_o=>{});
+    message.channel.send("하영")
+    message.delete().catch(O_o=>{});
+  }
+  
   
   if(command === "낮") {
 
