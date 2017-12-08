@@ -60,7 +60,7 @@ client.on("message", async message => {
                },
                {
                name: "~아바타",
-                 vale: "당신의 프로필을 보여줍니다.!
+                 vale: "당신의 프로필을 보여줍니다.!"
                },
                {
                  name: "~말 (하고싶은말)",
