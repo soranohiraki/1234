@@ -58,10 +58,10 @@ client.on("message", async message => {
   
   
   
-  if(command === "좋은아침이에요!!^^") {
+  if(command === "낮") {
      message.channel.sendMessage({
         "embed": {
-                title: '낮',
+                title: '좋은아침이에요!!^^',
                 url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif/',
                 "image": {
                 "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
@@ -79,7 +79,7 @@ message.reply(message.author.avatarURL);
   if(command === "좋은밤이에요!!^^") {
      message.channel.sendMessage({
         "embed": {
-                title: '낮',
+                title: '좋은밤이에요!!^^',
                 url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif/',
                 "image": {
                 "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif",
