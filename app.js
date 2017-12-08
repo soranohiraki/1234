@@ -61,9 +61,7 @@ client.on("message", async message => {
         "width":200
         }
     }]
-
-
-  }
+    }
   
   if(command === "아바타") {
   message.channel.send
@@ -80,9 +78,7 @@ client.on("message", async message => {
         "width":200
         }
     }]
-
-  
-   }
+    }
   
   if(command === "방송시작") {
 
