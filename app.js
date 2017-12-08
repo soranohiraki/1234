@@ -72,10 +72,7 @@ client.on("message", async message => {
 
     message.delete().catch(O_o=>{});
     
-    var embed = new Discord.RichEmbed();
- 
-embed.setImage("https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif", 200, 200);
-}
+   }
   
   if(command === "방송시작") {
 
