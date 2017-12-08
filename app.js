@@ -30,6 +30,11 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
   
+  
+  if(command === "도움말")
+    
+    
+  
  if(command === "퐁") {
    
    message.channel.send("핑!"); 
@@ -53,8 +58,15 @@ client.on("message", async message => {
   
   
   if(command === "낮") {
-
-    message.delete().catch(O_o=>{});
+     message.channel.sendMessage({
+        "embed": {
+                title: '낮',
+                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif',
+                "image": {
+                "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
+                }
+            }
+        });
     
   }
   
@@ -64,10 +76,20 @@ client.on("message", async message => {
 }
    
   if(command === "밤") {
-
-    message.delete().catch(O_o=>{});
-    
+     message.channel.sendMessage({
+        "embed": {
+                title: '낮',
+                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif',
+                "image": {
+                "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif",
+                }
+            }
+        });
+     
    }
+  
+  
+  
   
   if(command === "방송시작") {
 
