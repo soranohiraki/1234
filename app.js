@@ -79,6 +79,13 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
   
    }
   
+  if(command === "말") {
+
+    const sayMessage = args.join(" ");
+   
+    message.delete().catch(O_o=>{}); 
+  channel.send(sayMessage, { tts: true });
+  }
   
   if(command === "말") {
 
