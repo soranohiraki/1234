@@ -31,7 +31,8 @@ client.on("message", async message => {
   
   
   
-  if(command === "도움말")
+  if(command === "도움말") {
+  }
     
     
   
@@ -61,7 +62,7 @@ client.on("message", async message => {
      message.channel.sendMessage({
         "embed": {
                 title: '낮',
-                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif',
+                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif/',
                 "image": {
                 "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
                 }
@@ -79,7 +80,7 @@ message.reply(message.author.avatarURL);
      message.channel.sendMessage({
         "embed": {
                 title: '낮',
-                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif',
+                url: 'https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif/',
                 "image": {
                 "url": "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223562/goodnight0.5s.gif",
                 }
