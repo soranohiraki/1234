@@ -76,7 +76,7 @@ client.on("message", async message => {
 message.reply(message.author.avatarURL);
 }
    
-  if(command === "좋은밤이에요!!^^") {
+  if(command === "밤") {
      message.channel.sendMessage({
         "embed": {
                 title: '좋은밤이에요!!^^',
