@@ -3,7 +3,6 @@ const yt = require('ytdl-core');
 const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed()
-var embed = new Discord.RichEmbed();
 
 
 client.on("ready", () => {
