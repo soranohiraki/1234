@@ -178,6 +178,9 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
  
     const deleteCount = parseInt(args[0], 10);
     
+        if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
+      return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
+    
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("2에서 100중 숫자를 같이 써주세요! (예 ~청소)()( 99)");
