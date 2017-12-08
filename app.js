@@ -40,7 +40,7 @@ client.on("message", async message => {
     
     
     const reactions =await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 15000});
-    message.channel.send('투표결과 \n\n${agree}: ${reactons.get(agree).count-1}\n${disagree}: $reactions.get(disagree).count-1}')
+    message.channel.send('투표결과 \n\n${agree}: ${reactons.get(agree).count-1}\n${disagree}: $reactions.get(disagree).count-1}');
   }
   
   
@@ -79,7 +79,7 @@ client.on("message", async message => {
                  name: "~말 (하고싶은말)",
                  vale: "~말 이후에 한말을 다시 말합니다."
                }
-      ],
+               ],
       timestamp: new Date(),
       footer: {
         icon_url: client.user.avatarURL,
