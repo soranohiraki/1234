@@ -54,6 +54,7 @@ client.on("message", async message => {
   if(command === "낮") {
 
     message.delete().catch(O_o=>{});
+  }
   
   if(command === "아바타") {
   message.channel.send
