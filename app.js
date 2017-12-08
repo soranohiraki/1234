@@ -79,7 +79,7 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
   
    }
   
-  if(command === "") {
+  if(command === "메아리") {
 
     const sayMessage = args.join(" ");
    
