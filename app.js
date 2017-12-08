@@ -3,6 +3,9 @@ const yt = require('ytdl-core');
 const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed()
+const agree = "✅";
+const disagree = "❎";
+
 
 
 client.on("ready", () => {
@@ -29,7 +32,14 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  
+  module.exports.run = async (client, message, args) => {
+    let msg = await message.channel.send("투표!");
+    await msg.react(agree);
+    await msg.react(disagree)
+    
+    const reactions =await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 15000});
+    message.channel.send('투표결과 \n\n${agree}: ${reactons.get(agree).count-1}\n${disagree}: $reactions.get(disagree).count-1}')
+  }
   
   if(command === "도움말") {
         message.channel.send({embed: {
