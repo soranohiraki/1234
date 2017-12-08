@@ -54,6 +54,13 @@ client.on("message", async message => {
   if(command === "낮") {
 
     message.delete().catch(O_o=>{});
+    "embeds": [{
+        "image":{
+        "url":"https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
+        "height":200,
+        "width":200
+        }
+    }]
   }
   
   if(command === "아바타") {
