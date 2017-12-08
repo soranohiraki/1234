@@ -171,6 +171,8 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
  
     const deleteCount = parseInt(args[0], 10);
     
+    if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
+      return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
     
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
