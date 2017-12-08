@@ -57,19 +57,9 @@ client.on("message", async message => {
 
     message.delete().catch(O_o=>{});
     
-   var embed = new Discord.RichEmbed();
-    message.channel.send({embed: {
-      color: 3447003,
-      author: {
-        name: client.user.username,
-        icon_url: client.user.avatarURL
-      },
-      image":{
-        "url":"https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
-        "height":200,
-        "width":200
-        }
-    }]
+   message.channel.send("좋은아침입니다!", {
+    file: "https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif" // Or replace with FileOptions object
+});
                
   }
   
