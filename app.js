@@ -174,7 +174,7 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
     message.reply(`${member.user.tag} 님이 ${message.author.tag} 님에게 밴당하셨습니다 사유 : ${reason}`);
   }
   
-  if(command === "청소)()(") {
+  if(command === "청소") {
  
     const deleteCount = parseInt(args[0], 10);
     
