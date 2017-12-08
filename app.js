@@ -61,7 +61,6 @@ client.on("message", async message => {
         name: client.user.username,
         icon_url: client.user.avatarURL
       },
-      title: "낮사진",
       image":{
         "url":"https://cdn.discordapp.com/attachments/384356885970812928/385089929539223566/goodmoring0.5s.gif",
         "height":200,
