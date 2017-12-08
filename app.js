@@ -33,7 +33,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
   module.exports.run = async (client, message, args) => {
-    let msg = await message.channel.send("투표!");
+    let msg = await message.channel.send("투표");
     await msg.react(agree);
     await msg.react(disagree)
     
