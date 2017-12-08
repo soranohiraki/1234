@@ -73,12 +73,11 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
   
    }
   
-  if(command === "메아리") {
+  if(command === "방송시작") {
 
-    const sayMessage = args.join(" ");
-   
-    message.delete().catch(O_o=>{}); 
-  channel.send(sayMessage, { tts: true });
+    message.delete().catch(O_o=>{});
+channel.send('백호님의 방송이 시작되었습니다. 공지방에 유튜브링크가있으니 확인해주시길바랍니다.(찡긋)', { tts: true });
+    message.channel.send("https://www.youtube.com/user/yhjh1260")
   }
   
   if(command === "말") {
@@ -107,7 +106,7 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
         },
         {
           name: "백호 유튜브",
-          value: "이봇은 백호유튜브를 위해 만들어 졌습니다[백호유튜브 바로가기](https://www.youtube.com/user/yhjh1260)가서 구독좀 눌러줘영!."
+          value: "이봇은 백호유튜브를 위해 만들어 졌습니다[백호유튜브 바로가기](https://www.youtube.com/user/yhjh1260)"
         },
         {
           name: "부탁",
