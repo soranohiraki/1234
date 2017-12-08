@@ -75,6 +75,9 @@ message.channel.send("https://cdn.discordapp.com/attachments/384356885970812928/
   
   if(command === "방송시작") {
 
+    if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
+      return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
+    
     message.delete().catch(O_o=>{});
 message.channel.send("백호님의 방송이 시작되었습니다. 공지방에 유튜브링크가있으니 확인해주시길바랍니다.(찡긋)", { tts: true });
     message.delete().catch(O_o=>{});
@@ -150,7 +153,7 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
   
   if(command === "밴") {
    
-    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
       return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
     
     let member = message.mentions.members.first();
