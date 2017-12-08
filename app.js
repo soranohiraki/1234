@@ -33,6 +33,10 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
  if(command === "투표") {
+   const agree = "✅";
+   const disagree = "❎";
+   
+   
 
     let msg = await message.channel.send("투표");
     await msg.react(agree);
