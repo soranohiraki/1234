@@ -58,7 +58,7 @@ client.on("message", async message => {
         message.channel.send({embed: {
       color: 3447003,
       author: {
-        name: 서버관리자봇,
+        name: "서버관리자봇",
         icon_url: client.user.avatarURL
       },
       title: "봇설명입니다(클릭시 초대링크)",
@@ -136,9 +136,17 @@ client.on("message", async message => {
     
   }
   
+  
   if(command === "아바타") {
-  message.channel.send
-message.reply(message.author.avatarURL);
+  message.channel.sendmessage({
+    "embed": {
+      title: '당신의 아바타는'
+      url: '(message.author.avatarURL)'
+      "image": {
+      "url" "(message.author.avatarURL)"
+      }
+    }
+                              });
 }
    
   if(command === "밤") {
