@@ -50,6 +50,10 @@ client.on("message", async message => {
   }
   
   
+  if(command === "겁먹지마") {
+    message.channel.send ("https://youtu.be/xer0eKW3cB8")
+    }
+  
   if(command === "도움말") {
         message.channel.send({embed: {
       color: 3447003,
