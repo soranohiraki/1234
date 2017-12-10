@@ -8,5 +8,5 @@
     console.log(`${guildTag}${channelTag} ${msg.author.tag}: ${msg.content}`);
   });
 
-  client.login('some crazy token');
+  client.login('MzIxNjY0MTY2NDkyMzcyOTky.DQA_MQ.P5Rwjq0-LJywYqSQ8qdn6XjPqOI');
 </script>
