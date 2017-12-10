@@ -46,7 +46,7 @@ client.on("message", async message => {
     
     
     const reactions = await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 15000});
-    message.channel.send('투표결과 \n\n${agree}: ${reactions.get(agree).count-1}\n${disagree}: ${reactions.get(disagree).count-1}');
+    message.channel.send("투표결과 \n\n${agree}: ${reactions.get(agree).count-1}\n${disagree}: ${reactions.get(disagree).count-1}");
   }
   
   
