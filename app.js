@@ -138,15 +138,7 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-  message.channel.sendMessage({
-    "embed": {
-      title: '당신의 아바타는',
-      url: '(message.author.avatarURL)',
-      "image": {
-      "url" "(message.author.avatarURL)",
-      }
-    }
-                              });
+
 }
    
   if(command === "밤") {
