@@ -33,7 +33,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
  if(command === "투표") {
-    const 투표 = require('vote.js');
+    const await = require('vote.js');
  }
   
   
