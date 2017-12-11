@@ -32,9 +32,7 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
- if(command === "투표") {
-    const await = require('vote.js');
- }
+
   
   
   if(command === "겁먹지마") {
