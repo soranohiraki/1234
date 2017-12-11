@@ -123,37 +123,18 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-  const embed = {
-  "title": ".",
-  "description": ".",
-  "url": "https://discordapp.com",
-  "color": 1645078,
-  "timestamp": "2017-12-11T08:05:59.596Z",
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-    "text": "뀨?"
-  },
-  "thumbnail": {
-    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
-  },
-  "image": {
-    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
-  },
-  "author": {
-    "name": "당신의 프로필!",
-    "url": "https://discordapp.com",
-    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
-  },
-  "fields": [
-    {
-      "name": ".",
-      "value": ".",
-      "inline": true
-    }
-  ]
-};
-channel.send({ embed });
+         message.channel.sendMessage({
+        "embed": {
+                title: '좋은아침이에요!!^^',
+                url: ('user.avatarURL'),
+                "image": {
+                "url": ("user.avatarURL"),
+                }
+            }
+        });
+    
   }
+
    
   if(command === "밤") {
      message.channel.sendMessage({
