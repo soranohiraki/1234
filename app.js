@@ -122,10 +122,9 @@ client.on("message", async message => {
   }
   
   
-  if(command === "아바타") 
-{
+  if(command === "아바타") {
   
-"embed": {
+message.channel.send({"embed": {
     "title": "작은프로필! ->",
     "description": ".",
     "url": "https://discordapp.com",
@@ -147,7 +146,7 @@ client.on("message", async message => {
         "value":"* **^^** *"
       }
     ]
-  }
+    })
 }
    
   if(command === "밤") {
