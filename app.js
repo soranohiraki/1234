@@ -153,6 +153,7 @@ client.on("message", async message => {
   ]
 };
 channel.send({ embed });
+  }
    
   if(command === "밤") {
      message.channel.sendMessage({
