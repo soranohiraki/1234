@@ -125,10 +125,10 @@ client.on("message", async message => {
   if(command === "아바타") {
          message.channel.sendMessage({
         "embed": {
-                title: '좋은아침이에요!!^^',
-                url: user.avatarURL,
+                title: Client.user.username,
+                url: Client.user.avatarURL,
                 "image": {
-                "url": user.avatarURL,
+                "url": Client.user.avatarURL,
                 }
             }
         });
