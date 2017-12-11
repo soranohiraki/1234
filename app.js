@@ -123,7 +123,31 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
-
+{
+  
+"embed": {
+    "title": "작은프로필! ->",
+    "description": ".",
+    "url": "https://discordapp.com",
+    "color": 13679853,
+    "timestamp": "2017-12-11T07:56:51.056Z",
+    "footer": {
+      "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
+      "text": "footer text"
+    },
+    "thumbnail": {
+      "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+    },
+    "image": {
+      "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+    },
+    "fields": [
+      {
+        "name": "당신의 프로필이에요!",
+        "value":"* **^^** *"
+      }
+    ]
+  }
 }
    
   if(command === "밤") {
