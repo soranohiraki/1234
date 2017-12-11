@@ -122,7 +122,7 @@ client.on("message", async message => {
   }
   
   
-  if(command === "아바타") {
+  if(command === "아바타") 
 {
   
 "embed": {
