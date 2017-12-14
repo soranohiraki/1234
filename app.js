@@ -36,10 +36,16 @@ client.on("message", async message => {
   
   
   if(command === "겁먹지마") {
+    
+     message.delete().catch(O_o=>{});
+    
     message.channel.send ("https://youtu.be/xer0eKW3cB8")
     }
   
   if(command === "도움말") {
+    
+     message.delete().catch(O_o=>{});
+    
         message.channel.send({embed: {
       color: 3447003,
       author: {
@@ -88,10 +94,15 @@ client.on("message", async message => {
   
  if(command === "퐁") {
    
+    message.delete().catch(O_o=>{});
+   
    message.channel.send("핑!"); 
   }
   
  if(command === "테스트") {
+   
+    message.delete().catch(O_o=>{});
+   
     request.get(message.content.substr(11)).pipe(fs.createWriteStream('./setavatar.png'));
     client.user.setAvatar(fs.readFileSync('./setavatar.png')).then(user => { message.channel.send('✔ Operation successful'); console.log('New Avatar set!'); })
         .catch((error) => { message.channel.send('× Operation failed'); console.log('Error on setavatar command:', error); });
@@ -101,6 +112,8 @@ client.on("message", async message => {
   
   
   if(command === "핑") {
+    
+     message.delete().catch(O_o=>{});
    
     const m = await message.channel.send("핑이요?");
     m.edit(`퐁! 대기 시간은 ${m.createdTimestamp - message.createdTimestamp}ms 입니다. API 대기 시간은 ${Math.round(client.ping)}ms 입니다. ^^7`);
@@ -109,6 +122,9 @@ client.on("message", async message => {
   
   
   if(command === "아침") {
+    
+     message.delete().catch(O_o=>{});
+    
      message.channel.sendMessage({
         "embed": {
                 title: '좋은아침이에요!!^^',
@@ -123,12 +139,14 @@ client.on("message", async message => {
   
   
   if(command === "아바타") {
+    
+     message.delete().catch(O_o=>{});
+    
          message.channel.sendMessage({
         "embed": {
-                title: Client.user.username,
-                url: Client.user.avatarURL,
+                title: 'Client.user.username',
+                url: 'Client.user.avatarURL',
                 "image": {
-                "url": Client.user.avatarURL,
                 }
             }
         });
@@ -153,6 +171,8 @@ client.on("message", async message => {
   
   
   if(command === "방송시작") {
+    
+     message.delete().catch(O_o=>{});
 
     if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
       return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
@@ -164,16 +184,19 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
   }
   
   if(command === "말") {
+    
+     message.delete().catch(O_o=>{});
 
     const sayMessage = args.join(" ");
-   
-    message.delete().catch(O_o=>{}); 
 
     message.channel.send(sayMessage);
   }
 
 
   if(command === "공지") {
+    
+     message.delete().catch(O_o=>{});
+    
     message.channel.send({embed: {
       color: 3447003,
       author: {
@@ -207,6 +230,8 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
   }
   
   if(command === "킥") {
+    
+     message.delete().catch(O_o=>{});
   
     if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
       return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
@@ -231,6 +256,8 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
   }
   
   if(command === "밴") {
+    
+     message.delete().catch(O_o=>{});
    
     if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
       return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
