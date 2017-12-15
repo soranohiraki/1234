@@ -34,61 +34,6 @@ client.on("message", async message => {
   
 
   
-  
-  if(command === "겁먹지마") {
-    
-     message.delete().catch(O_o=>{});
-    
-    message.channel.send ("https://youtu.be/xer0eKW3cB8")
-    }
-  
-  if(command === "도움말") {
-    
-     message.delete().catch(O_o=>{});
-    
-        message.channel.send({embed: {
-      color: 3447003,
-      author: {
-        name: "서버관리자봇",
-        icon_url: client.user.avatarURL
-      },
-      title: "봇설명입니다(클릭시 초대링크)",
-      url: 'https://discord.gg/h4GCDTa',
-      description: "봇에 대한 명령어들입니다. 추가되거나 변경될시 이곳에 나옵니다^^",
-      fields: [{
-          name: "~핑",
-          value: "봇의 핑이 확인됩니다."
-        },
-        {
-          name: "~퐁",
-          value: "핑이라 대답합니다."
-        },
-        {
-          name: "~낮",
-          value: "낮에대한 사진을 업로드합니다. (아침에 사용해주세요.)"
-        },
-               
-               {
-                 name: "~밤",
-                 vale: "밤에대한 사진을 업로드합니다. (밤에 사용해주세요.)"
-               },
-               {
-               name: "~아바타",
-                 vale: "당신의 프로필을 보여줍니다.!"
-               },
-               {
-                 name: "~말 (하고싶은말)",
-                 vale: "~말 이후에 한말을 다시 말합니다."
-               }
-               ],
-      timestamp: new Date(),
-      footer: {
-        icon_url: client.user.avatarURL,
-        text: "©나이트 봇"
-      }
-    }
-  })
-  }
     
     
   
@@ -190,6 +135,7 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
     const sayMessage = args.join(" ");
 
     message.channel.send(sayMessage);
+    message.channel.send("라고 말하셨습니다.")
   }
 
 
