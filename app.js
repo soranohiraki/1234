@@ -62,6 +62,7 @@ client.on("message", async message => {
             .setTitle(`#${color}`)
             .setColor(`#${color}`);
      message.channel.send({embed: embed});
+  }
   
   if(command === "핑") {
     
