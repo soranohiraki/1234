@@ -56,6 +56,12 @@ client.on("message", async message => {
     return;
 }
   
+  if(command === "테스트") {
+      let color = ((1 << 24) * Math.random() | 0).toString(16); //Generates random hex value.
+      let embed = new Discord.RichEmbed() //Embeds.
+            .setTitle(`#${color}`)
+            .setColor(`#${color}`);
+     message.channel.send({embed: embed});
   
   if(command === "핑") {
     
