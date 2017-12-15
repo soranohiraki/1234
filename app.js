@@ -44,6 +44,7 @@ client.on("message", async message => {
    message.channel.send("핑!"); 
   }
   
+  
  if(command === "테스트") {
    
     message.delete().catch(O_o=>{});
@@ -135,7 +136,7 @@ message.channel.send("백호님의 방송이 시작되었습니다. 공지방에
     const sayMessage = args.join(" ");
 
     message.channel.send(sayMessage);
-    message.channel.send("라고 말하셨습니다.")
+
   }
 
 
