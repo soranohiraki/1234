@@ -36,6 +36,13 @@ client.on("message", async message => {
   
     
     
+  if(command === "백호유튜브") {
+    message.delete().catch(O_o=>{});
+    
+    message.channel.send("https://www.youtube.com/user/yhjh1260");
+  }
+  
+  
   
  if(command === "퐁") {
    
