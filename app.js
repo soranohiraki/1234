@@ -102,10 +102,12 @@ client.on("message", async message => {
     
      message.delete().catch(O_o=>{});
     
+    const avatar = Client.user.avatarURL
+          
          message.channel.sendMessage({
         "embed": {
-                title: 'Client.user.username',
-                url: 'Client.user.avatarURL',
+                title: ('Client.user.username'),
+                url: ('avatar'),
                 "image": {
                   "url": "Client.user.avatarURL",
                 }
