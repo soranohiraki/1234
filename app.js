@@ -107,6 +107,7 @@ client.on("message", async message => {
                 title: 'Client.user.username',
                 url: 'Client.user.avatarURL',
                 "image": {
+                  "url": "Client.user.avatarURL",
                 }
             }
         });
