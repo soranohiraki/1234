@@ -165,7 +165,7 @@ action: function(cache) {
 		embed.addField(name, message, inline);
 	}
 	this.callNextAction(cache);
-}
+},
 
    
   if(command === "밤") {
