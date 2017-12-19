@@ -100,7 +100,7 @@ client.on("message", async message => {
   
   if(command === "아바타") {
     
-     message.delete().catch(O_o=>{});
+//     message.delete().catch(O_o=>{});
     
     const avatar = Client.user.avatarURL
           
