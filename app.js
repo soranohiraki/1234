@@ -114,12 +114,21 @@ client.on("message", async message => {
   }
   
   
-  if(command === "아바타") {
 
+  if(command === "아바타") {
     message.delete().catch(O_o=>{});
     
+     message.channel.sendMessage({
+        "embed": {
+                title: '당신의 아바타입니다!^^',
+                url: message.author.avatarURL,
+                "image": {
+                "url": message.author.avatarURL,
+                }
+            }
+        });
+    
   }
-
    
   if(command === "밤") {
      message.channel.sendMessage({
