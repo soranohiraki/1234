@@ -42,7 +42,25 @@ client.on("message", async message => {
     message.channel.send("https://www.youtube.com/user/yhjh1260");
   }
   
-  
+    if(command === "투표") {
+    
+         message.delete().catch(O_o=>{});
+
+    if(!message.member.roles.some(r=>["또라이", "멤버", "매니저", "ADMIN", "봇 개발자"].includes(r.name)) )
+      return message.reply("죄송하지만 백청자여러분은 권한이 없습니다");
+    
+    
+    const agree = "✅";
+    const disagree = "❎";
+    
+    let msg = await message.channel.send("투표해주세요!");
+    await msg.react(agree);
+    await msg.react(disagree);
+    
+    const reactions = await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 15000});
+    message.channel.send(`투표성공! \n\n${agree}: ${reactions.get(agree).count-1}\n${disagree}: ${reactions.get(disagree).count-1}`);
+  }
+
   
  if(command === "퐁") {
    
