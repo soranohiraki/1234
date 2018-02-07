@@ -10,17 +10,17 @@ const disagree = "❎";
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setGame(`봇 수정중`);
+  client.user.setGame(`서버 관리중`);
 });
 
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setGame(`봇 수정중`);
+  client.user.setGame(`서버 관리중`);
 });
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setGame(`봇 수정중`);
+  client.user.setGame(`서버 관리중`);
 });
 
         
