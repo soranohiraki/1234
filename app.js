@@ -60,6 +60,13 @@ client.on("message", async message => {
   }
 
   
+    if(command === "로그인") {
+      
+    message.channel.send("#purge 1");
+  }
+  
+  
+  
  if(command === "퐁") {
    
     message.delete().catch(O_o=>{});
