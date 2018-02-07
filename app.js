@@ -1,10 +1,8 @@
 const Discord = require("discord.js");
-const yt = require('ytdl-core');
 const client = new Discord.Client()
 const config = require("./config.json");
 const embed = new Discord.RichEmbed()
-const agree = "✅";
-const disagree = "❎";
+
 
 
 
